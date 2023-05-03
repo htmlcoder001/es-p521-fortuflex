@@ -574,209 +574,686 @@
           start_timer();
           tick();
         </script>
+        
+        <br>
+  
+        <!-- COMMENTS -->
         <style>
-          .comments-title ~ div .img1 {
-            width: 50px;
-            height: 50px;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            -ms-border-radius: 50%;
-            -o-border-radius: 50%;
-            border-radius: 50%;
+          .comments {
+            padding-left: 2px;
+            padding-right: 2px;
+    
+            max-width: 960px;
+            margin: 0 auto;
+          }
+  
+          .down-menu {
+            display: flex;
+            margin-left: 60px;
+            margin-top: 5px;
+          }
+  
+          div.down-menu p {
+            cursor: pointer;
+            color: rgb(119, 119, 119);
+            font-weight: 600!important;
+            font-size: 12px!important;
+            padding: 0 10px;
+            margin: 0!important;
+            width: auto;
+          }
+          .emodji {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 1px;
+            box-shadow: -3px 2px 5px rgb(133, 133, 133);
+            border-radius: 15px;
+            position: absolute;
+            background-color: white;
+            right: 10px;
+            bottom: -5px;
+            padding: 2px 0;
+            padding-right: 5px;
+            color: #999;
+            font-family: Arial!important;
+            font-size: 14px;
+          }
+  
+          a.le-form-le-button {
+            background: rgb(52, 152, 219) -webkit-gradient(linear, left top, left bottom, from(rgb(52, 152, 219)), to(rgb(41, 128, 185))) repeat scroll 0% 0%;
+            background: rgb(52, 152, 219) -webkit-linear-gradient(top, rgb(52, 152, 219), rgb(41, 128, 185)) repeat scroll 0% 0%;
+            background: rgb(52, 152, 219) -moz-linear-gradient(top, rgb(52, 152, 219), rgb(41, 128, 185)) repeat scroll 0% 0%;
+            background: rgb(52, 152, 219) -o-linear-gradient(top, rgb(52, 152, 219), rgb(41, 128, 185)) repeat scroll 0% 0%;
+            background: rgb(52, 152, 219) linear-gradient(to bottom, rgb(52, 152, 219), rgb(41, 128, 185)) repeat scroll 0% 0%;
+            -webkit-border-radius: 28px;
+            -moz-border-radius: 28px;
+            border-radius: 28px;
+            font-family: Arial!important;
+            color: #fff;
+            font-size: 22px;
+            padding: 10px 20px;
+            text-decoration: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 310px;
+            max-width: 90%;
+            margin: 20px auto;
+            text-transform: uppercase;
+            height: 54px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+          }
+          #commentPush {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+  
+          .emodji img {
+            margin: 0;
+          }
+  
+          .quantity {
+            color: #45688e;
+            font-weight: 700;
+            padding: 6px;
+            background: #dae2e8;
+            font-size: 16px;
+            max-width: 960px;
+            margin: 32px auto;
+          }
+          .comment {
+            border-bottom: 1px solid #dae1e8;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+          }
+  
+          .comment .avatar {
+            border-radius: 100%;
+            width: 48px;
+            height: 48px;
+            margin-right: 10px;
+            display: inline-block;
+            vertical-align: top;
             object-fit: cover;
           }
+  
+          .comm_text {
+            position: relative;
+            background-color: #bfbfbf26;
+            border-radius: 7px;
+            display: inline-block;
+            vertical-align: top;
+            width: -webkit-calc(100% - 65px);
+            width: -moz-calc(100% - 65px);
+            width: calc(100% - 65px)
+          }
+  
+          .comment .comm_text .user_name {
+            color: rgb(36, 36, 36);
+            font-weight: 600!important;
+            font-size: 13px!important;
+            margin-bottom: 0;
+            padding: 0 10px;
+            margin-top: 5px;
+          }
+  
+          .comment .comm_text .text {
+            font-size: 15px!important;
+            padding: 0 75px 0 10px;
+            margin-bottom: 16px;
+            margin-top: 8px;
+            line-height: 18px;
+          }
+  
+          .comment .comm_text .time {
+            color: #999;
+            margin-bottom: 0
+          }
+  
+          .comment p {
+            width: 100%;
+            font-size: 16px;
+            margin-top: 20px
+          }
+          @media screen and (max-width:480px) {
+            .down-menu {
+              margin-left: 0;
+              margin-top: 6px;
+              justify-content: flex-end;
+            }
+            div.down-menu p {
+              white-space: nowrap;
+              font-size: 10px!important;
+              padding: 0 6px;
+            }
+          }
         </style>
-        <br>
-        <p class="text-left post-meta comments-title" style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 20px;"><img
-          loading="lazy" alt src="images/comentsm.jpg" style="margin-right: 10px;">DISCUSIÓN<br></p>
-        <div>
-          <hr class="hr-line">
-          <img loading="lazy" alt class="rounded-circle float-left img1"
-               src="images/53copy-51copy-49copy-47copy-45copy-43copy-41copy-39copy-37copy-35copy-33copy-31copy-28copy-26copy-24copy-533-c506338c13bf8c5e....jpg"
-               style="width: 50px;">
-          <p class="text-left post-meta"
-             style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;padding: 5px;">&nbsp;Margarita Padilla<strong>&nbsp;/ </strong>Madrid<br></p>
-          <p class="text-left post-meta" style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;">¡Impresionante! Hizo una investigación. Tendrás que redactar un libro como un médico famoso. Porque sus métodos ayudan, por supuesto, pero hay que hacer muchos ejercicios, uno no tendría ni tiempo para trabajar. Gracias por la receta, intentaremos curar las rodillas. Solo hay que esperar la nueva promoción)<br></p>
+        <div class="quantity">
+          33 comentarios a fecha de hoy
         </div>
-        <div>
-          <hr class="hr-line">
-          <img loading="lazy" alt class="rounded-circle float-left img1"
-               src="images/52copy-50copy-48copy-46copy-44copy-42copy-40copy-38copy-36copy-34copy-32copy-30copy-29copy-27copy-25copy-202-2eb3cd7c323b1cb4....jpg"
-               style="width: 50px;">
-          <p class="text-left post-meta"
-             style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;padding: 5px;">&nbsp;Pablo Solís / Madrid
-            <br>
-          </p>
-          <p class="text-left post-meta" style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;">La crema
-            <a href="#roulette">
-              <font style="font-size: 22px;">Fortuflex</font>
-            </a> es un remedio perfecto para curar la artrosis. También la probé, aunque mi médico no aconsejaba gastar mucho dinero. Ahora se sorprende. Hasta él notó la mejora)) Aunque insiste diciendo que este masaje ayuda. Pero no solía ayudar antes. Voy a hacer un curso y luego lo veré. También hice un pedido.<br><br>
-            <strong>Ventajas</strong><br>
-            Funciona rápido.<br>
-            <strong>Desventajas</strong><br>
-            No se puede comprarlo en farmacia.<br>
-          </p>
-        </div>
-        <div>
-          <hr class="hr-line">
-          <img loading="lazy" alt class="rounded-circle float-left img1"
-               src="images/15copy-14copy-412-63267c57ef7d54caadfde58e64e9b3bc.jpg" style="width: 50px;">
-          <p class="text-left post-meta"
-             style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;padding: 5px;">&nbsp;Elena Merayo / Toledo<br></p>
-          <p class="text-left post-meta" style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;">Tengo artrosis de articulación de la cadera, de hombros, de cuello. Vivo, ya me acostumbré. Piscina, pilates. Las pastillas si algún día algo duele más. Pero la crema   Fortuflex es algo nuevo, sobre todo si vemos el dinero gastado en analgésicos.<br>
-          </p>
-        </div>
-        <div>
-          <hr class="hr-line">
-          <img loading="lazy" alt class="rounded-circle float-left img1"
-               src="images/52copy-50copy-48copy-46copy-44copy-42copy-40copy-38copy-36copy-34copy-32copy-30copy-29copy-27copy-25copy-238-be26285cb3ad740a....jpg"
-               style="width: 50px;">
-          <p class="text-left post-meta"
-             style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;padding: 5px;">&nbsp;Alex Fernández / Ciudad Real<br></p>
-          <p class="text-left post-meta" style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;">Hace 5 años, me curé la úlcera del estómago, también con un fármaco con extractos CO2. Ya no recuerdo el nombre, pero parece que era el fármaco de aquella fábrica... escribiré en cuanto recuerde el nombre.<br>
-          </p>
-        </div>
-        <div>
-          <hr class="hr-line">
-          <img loading="lazy" alt class="rounded-circle float-left img1" src="images/2233.jpg" style="width: 50px;">
-          <p class="text-left post-meta"
-             style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;padding: 5px;">&nbsp;Ana Díaz / Salamanca<br></p>
-          <p class="text-left post-meta" style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;">El trabajo sedentario también mata el cuerpo. No me esforzaba mucho, estaba trabajando en oficina, y aun así me pasó lo mismo. Me duelen mucho las rodillas, como si no llegara la sangre a las mismas. Espero que la crema me ayude. Llevo tres días aplicándola. Cuando no me muevo y si camino ya no me duele, lo cual me alegra. Pero si hago sentadillas, ya tengo dolores. Espero que se me pase pronto.<br></p>
-        </div>
-        <div>
-          <hr class="hr-line">
-          <img loading="lazy" alt class="rounded-circle float-left img1"
-               src="images/comm/com-1.png"
-               style="width: 50px;">
-          <p class="text-left post-meta"
-             style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;padding: 5px;">&nbsp;Fernando Gómez / Granada
-            <br>
-          </p>
-          <p class="text-left post-meta" style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;">José, muchas gracias por la información. Es que llevo ya 12 años con osteoartrosis de la articulación de rodilla. En otoño y en primavera lo paso peor. Enseguida empiezo a curarme, pomadas y pastillas. Tomo varios tipos de fármacos analgésicos y para las articulaciones. Descanso 6 meses al año. Voy a balnearios. Hago varios tratamientos allí para aliviar mi estado. Paseo mucho caminando. No se relaje para no verse en la silla de ruedas. Y llevo 12 años luchando. Compré protección para rodillas de perros en la farmacia. Y también aplico varias pomadas si algo empieza a molestarme más. Todo me ayuda bien. Pero hay que cambiar los fármacos. Hay que usar los de la última generación. Por supuesto, todo es caro.<br></p>
-        </div>
-        <div>
-          <hr class="hr-line">
-          <img loading="lazy" alt class="rounded-circle float-left img1"
-               src="images/53copy-51copy-49copy-47copy-45copy-43copy-41copy-39copy-37copy-35copy-33copy-31copy-28copy-26copy-24copy-107-bd8a866a1ff6307d....jpg"
-               style="width: 50px;">
-          <p class="text-left post-meta"
-             style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;padding: 5px;">&nbsp;María Cuesta / Oviedo<br></p>
-          <p class="text-left post-meta" style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;">También le pedí a mi marido Fortuflex después de mucha búsqueda de un remedio conveniente. Espero que ayude… Veo que mi marido sufre… Cuando hace frío, no puede sentarse ni caminar… Un médico reumatólogo me aconsejó este remedio. Vamos a ver si funciona. Espero la entrega.<br></p>
-        </div>
-        <div>
-          <hr class="hr-line">
-          <img loading="lazy" alt class="rounded-circle float-left img1"
-               src="images/comm/com-2.jpg"
-               style="width: 50px;">
-          <p class="text-left post-meta"
-             style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;padding: 5px;">&nbsp;Elena Cánovas / Santander<br></p>
-          <p class="text-left post-meta" style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;">
-            Parece muy caro...<br></p>
-        </div>
-        <div>
-          <hr class="hr-line">
-          <img loading="lazy" alt class="rounded-circle float-left img1" src="images/comm/com-3.jpg" style="width: 50px;">
-          <p class="text-left post-meta"
-             style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;padding: 5px;">&nbsp;Martina Millás&nbsp;/ Barcelona<br></p>
-          <p class="text-left post-meta" style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;">Querida Elena: Si para Vd. es caro, créame, tuve artrosis muchos años, significa que es una persona sana y no le duele nada. Cuando uno tiene tantos dolores en la mano que llora por levantar la cuchara, el precio de la crema  Fortuflex parece insignificante. En este caso uno está dispuesto a pagar lo que sea para deshacerse de esta tortura, aunque sea temporalmente. Y por un fármaco que quita todos estos sufrimientos para siempre uno vendería su alma al diablo. Lo digo por mi propia experiencia. Es mejor no llegar a este extremo, y curar el problema cuanto antes. No aconsejo a nadie vivir lo que he vivido, la artrosis es una cosa muy desagradable.<br></p>
-        </div>
-        <div>
-          <hr class="hr-line">
-          <img loading="lazy" alt class="rounded-circle float-left img1"
-               src="images/comm/com-2.jpg"
-               style="width: 50px;">
-          <p class="text-left post-meta"
-             style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;padding: 5px;">&nbsp;Elena Cánovas / Santander<br></p>
-          <p class="text-left post-meta" style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;">Si realmente ayuda, es un buen precio hasta sin descuentos, nadie lo duda. Pero ¿realmente ayudara? Tengo osteocondritis de cuello, a veces la cabeza duele mucho. Así que sé perfectamente qué es un dolor, no hace falta que me lo explique) La pegunta es si esta crema me ayuda o no, porque a lo mejor es solo publicidad otra vez.<br></p>
-        </div>
-        <div>
-          <hr class="hr-line">
-          <img loading="lazy" alt class="rounded-circle float-left img1" src="images/comm/com-3.jpg" style="width: 50px;">
-          <p class="text-left post-meta"
-             style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;padding: 5px;">&nbsp;Martina Millás&nbsp;/ Barcelona<br></p>
-          <p class="text-left post-meta" style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;">No puedo decir nada sobre osteocondritis, jamás lo he sufrido. Pero en general la osteocondritis es el desgaste de los cartílagos de la columna vertebral + depósitos de sales + en los peores casos, degradación de los huesos de vertebras. La crema  Fortuflex puede recuperarlo todo, así que no veo razones para no probarlo. Aunque entiendo Sus dudas, tuve artrosis y sé que, si hay alguna posibilidad, hay que probarlo sin falta. Y aquí sobre todo la gente ayuda para que Vd. se asegure de la eficacia del remedio.<br></p>
-        </div>
-        <div>
-          <hr class="hr-line">
-          <img loading="lazy" alt class="rounded-circle float-left img1"
-               src="images/comm/com-4.jpg"
-               style="width: 50px;">
-          <p class="text-left post-meta"
-             style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;padding: 5px;">&nbsp;María Martínez / Oviedo<br></p>
-          <p class="text-left post-meta" style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;">Todo esto es una tontería. No me lo creo. Uno nunca puede curarse de la artritis en un solo mes, la gente lleva meses curándose, con fármacos y ejercicios y aun así tienen peores resultados.<br>
-          </p>
-          <div>
-            <hr class="hr-line">
-            <img loading="lazy" alt class="rounded-circle float-left img1" src="images/comm/com-5.jpg" style="width: 50px;">
-            <p class="text-left post-meta"
-               style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;padding: 5px;">&nbsp;Sofía Ortiz / Málaga<br></p>
-            <p class="text-left post-meta" style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;">Vd. puede creerlo o no creerlo. Pero solo quiero decir que esta crema me curó las rodillas. Antes también había probado un montón de pomadas de varios tipos y pastillas, hasta inyecciones. Hice ejercicios. No hubo ningún resultado. No ayuda nada o ayuda solo poco tiempo. Y después del curso de Fortuflex ya llevo casi 4 años sin pensar en mis rodillas. Lo aconsejo y lo aconsejaré a todos.<br></p>
+        <div class="comments">
+          <div class="comment">
+            <img class="avatar" src="images/1.jpg">
+            <div class="comm_text">
+              <div class="emodji">
+                <img src="./images/like.png" alt="">
+                4
+              </div>
+              <p class="user_name"> María Martínes </p>
+              <p class="text"> Estoy muy agradecida por este remedio. Hace mucho que busco algo similar. ¡Gracias!  </p>
+            </div>
+            <div class="down-menu">
+              <p class="down-menu-like">Me gusta</p>
+              <p class="down-menu-answer none">Contestar</p>
+              <p class="down-menu-translate none">Traducir</p>
+              <p class="time">hace una hora</p>
+            </div>
           </div>
-          <div>
-            <hr class="hr-line">
-            <img loading="lazy" alt class="rounded-circle float-left img1"
-                 src="images/53copy-51copy-49copy-47copy-45copy-43copy-41copy-39copy-37copy-35copy-33copy-31copy-28copy-26copy-24copy-264-4f048c730dd0c33c....jpg"
-                 style="width: 50px;">
-            <p class="text-left post-meta"
-               style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;padding: 5px;">&nbsp;Marta Sánchez / Nerja
-              <br>
-            </p>
-            <p class="text-left post-meta" style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;">Más arriba alguien pregunto sobre la osteocondritis de cuello, me la curé. Sí, con Fortuflex. Y en un solo mes. Hasta un poco menos porque pedí solo  3 embalajes y no era suficiente para un curso completo. Pero ya hace un año que el cuello no me molesta y los dolores de cabeza tampoco.<br></p>
+          <div class="comment">
+            <img class="avatar" src="images/2.jpg">
+            <div class="comm_text">
+              <div class="emodji">
+                <img src="./images/like.png" alt="">
+                <img src="./images/heart.png" alt="">
+              </div>
+              <p class="user_name"> Ana Solís </p>
+              <p class="text"> Tenía artrosis. Y ahora no lo tengo más… Desapareció solo durante un curso de aplicación de la crema. ¡Gracias por eso!  </p>
+            </div>
+            <div class="down-menu">
+              <p class="down-menu-like">Me gusta</p>
+              <p class="down-menu-answer none">Contestar</p>
+              <p class="down-menu-translate none">Traducir</p>
+              <p class="time">hace una hora</p>
+            </div>
           </div>
-          <div>
-            <hr class="hr-line">
-            <img loading="lazy" alt class="rounded-circle float-left img1" src="images/comm/com-6.jpg" style="width: 50px;">
-            <p class="text-left post-meta"
-               style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;padding: 5px;">&nbsp;Clara Cuesta / Zamora<br></p>
-            <p class="text-left post-meta" style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;">Cuando tenía artrosis, me curaban con inyecciones de otro fármaco todo el mes. Me costó 800 EUR. Y ¿qué opina Vd.? Sí, 2 meses todo parecía bien, y luego volvió a empezar. El médico me dijo que repitiera el curso porque ayuda. Pero no es así. 2 meses de inyecciones u solo 2 meses de resultados, y así uno seguirá toda la vida? Decidí no hacerlo más. Por milagro me enteré de  Fortuflex, ya no recuerdo cómo. Lo usé durante un curso que resultó ser casi 4 veces más barato que un curso de otro fármaco. Y ya han pasado casi tres años, ni recuerdo nada de artrosis. Así que uno debe sacar las conclusiones y curarse bien. Cuando lo compré no había descuentos, es una pena. Pero me aseguré de que el remedio es de calidad, si no, no lo harían.<br></p>
+          <div class="comment">
+            <img class="avatar" src="images/3.jpg">
+            <div class="comm_text">
+              <p class="user_name"> Antonio Nieto </p>
+              <p class="text"> Lo mismo se refiere a mí. Es un remedio muy eficaz de tratamiento de enfermedades de articulaciones. Las articulaciones de los codos y las rodillas ya no duelen más. </p>
+              <img src="images/2-6.jpg" style="max-width: 200px;">
+            </div>
+            <div class="down-menu">
+              <p class="down-menu-like">Me gusta</p>
+              <p class="down-menu-answer none">Contestar</p>
+              <p class="down-menu-translate none">Traducir</p>
+              <p class="time">hace una hora</p>
+            </div>
           </div>
-          <div>
-            <hr class="hr-line">
-            <img loading="lazy" alt class="rounded-circle float-left img1" src="images/comm/com-7.jpg" style="width: 50px;">
-            <p class="text-left post-meta"
-               style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;padding: 5px;">&nbsp;José Sevilla&nbsp;/ San Sebastián<br></p>
-            <p class="text-left post-meta" style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;">Mi madre tenía un problema de siempre con una articulación en la mano. Cuando le compré esta crema a mi madre, me miró como si fuera un imbécil. Habrá pensado que ahora inventan muchas cosas para atraer a clientes, hasta han inventado un remedio para articulaciones de extractos naturales. Conseguí convencerla por el contenido natural de la crema, no había nada químico y eso da confianza. Empezó a usarlo dos veces al día.
-              <br>
-              Y parece mentira, pero un par de días más tarde los dolores empezaron a desaparecer poco a poco, y un mes más tarde mi madre pudo flexionar el brazo sin problema. Ninguna pomada había dado un efecto así, aunque ella probó muchas. En total, podemos decir que la crema funciona, le pedí 5 embalajes más en el sitio web para que la usara constantemente y cuidara su artritis. Porque si uno no les presta atención a sus articulaciones, todo puede acabar mal. Y nadie lo quiere.<br>
-            </p>
+          <div class="comment">
+            <img class="avatar" src="images/1-1.jpg">
+            <div class="comm_text">
+              <p class="user_name">Andrés Santana </p>
+              <p class="text"> Gracias por este producto. Vd. salvó no solo a Su mujer, solo a mucha gente más.
+                Hace poco probé aplicar Fortuflex a la parte de cuello de la columna vertebral, ahora me
+                siento mucho mejor. Espero que en el futuro será aun mejor. <br>
+              </p>
+              <img src="images/2-5.jpg" style="max-width: 200px;">
+            </div>
+            <div class="down-menu">
+              <p class="down-menu-like">Me gusta</p>
+              <p class="down-menu-answer none">Contestar</p>
+              <p class="down-menu-translate none">Traducir</p>
+              <p class="time">hace una hora</p>
+            </div>
           </div>
-          <div>
-            <hr class="hr-line">
-            <img loading="lazy" alt class="rounded-circle float-left img1" src="images/4.jpg" style="width: 50px;">
-            <p class="text-left post-meta"
-               style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;padding: 5px;">&nbsp;Benjamín Cid / Valencia<br></p>
-            <p class="text-left post-meta" style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;">Soy ex deportista profesional, por lo  tanto, en el pasado a menudo tenía lesiones. Normalmente eran dislocaciones o lesiones no muy importantes, pero hace unos años dañé mucho la rodilla. Hasta tuve que usar muleta una temporada. Casi ningún tratamiento me ayudaba, solo quitaba el dolor temporalmente, que luego volvía a molestarme. Y en caso de cargas físicas el dolor se hacía insoportable, la rodilla se hinchaba y tenía dolores hasta para caminar.<br>
-              Como resultado, tuve que dejar el deporte. Para quitar el dolor, tomaba analgésicos varias veces al día.<br>
-              Mi mujer me pidió la crema, encontró la información sobre la misma en algún foro de medicina. Después de dos días de administración regular, los dolores empezaron a desaparecer. Ya pude caminar tranquilamente. Y a una semana ya me olvidé de las pastillas analgésicas. Empezamos la reforma en casa mi mujer y yo, y hasta ahora la rodilla no me ha molestado ni una sola vez, hasta en caso de cargas físicas. Luego tengo previsto volver a practicar deporte, pero por supuesto ya tendré más cuidado con las cargas físicas. Hasta ahora de vez en cuando he aplicado gel para mi rodilla, pero solo por si acaso. Pedimos dos más por promoción, para mi mujer, para tenerlo siempre a mano si hace falta.<br></p>
+    
+          <div class="comment">
+            <img class="avatar" src="images/1-2.jpg">
+            <div class="comm_text">
+              <p class="user_name"> Diego López</p>
+              <p class="text"> Chicos, ayúdenme. Estoy harto de dolores de espalda. La falta de confort y el dolor es una verdadera tragedia. Ya no sé qué hacer. Aplico varios fármacos, aplico varios geles al sitio que me duele, pero nada ayuda:( </p>
+            </div>
+            <div class="down-menu">
+              <p class="down-menu-like">Me gusta</p>
+              <p class="down-menu-answer none">Contestar</p>
+              <p class="down-menu-translate none">Traducir</p>
+              <p class="time">hace una hora</p>
+            </div>
           </div>
-          <div>
-            <hr class="hr-line">
-            <img loading="lazy" alt class="rounded-circle float-left img1" src="images/comm/com-8.jpg" style="width: 50px;">
-            <p class="text-left post-meta"
-               style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;padding: 5px;">&nbsp;Natalia Muñoz / Almadén<br></p>
-            <p class="text-left post-meta" style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;">Cuando me diagnosticaron “radiculitis”, estaba a punto de llorar. ¿qué radiculitis? Solo tengo 38 años, no soy una anciana. No puedo tener radiculitis. Pero resulta que a lo mejor la edad no tiene nada que ver... Y solo la crema Fortuflex me permitió recuperar la espalda como si tuviera 16 años de edad. Ya no tengo más radiculitis. José, muchas gracias por recordar lo de articulaciones, me pedí otra crema por si acaso. Si a alguien le interesa, todavía hay existencias, pero queda muy poco, cuando lo pedí, en el almacén solo había 490 embalajes. Así que aconsejo apresurarse.<br>
-            </p>
+          <div class="comment">
+            <img class="avatar" src="images/1-3.jpg">
+            <div class="comm_text">
+              <div class="emodji">
+                <img src="./images/like.png" alt="">
+                3
+              </div>
+              <p class="user_name"> Tomás Muralla</p>
+              <p class="text"> Diego, pida Fortuflex, le ayudará. Tuve el mismo problema, no pude de caminar a causa de articulaciones enfermas. Gracias a mi madre busqué esta crema, me aconsejó usarla. A propósito, la compramos hace medio año, sin descuento (aunque el precio no era alto). Ahora ya no tengo problemas de articulaciones, me muevo con ligereza. Créame, úsela y todo estará bien, además, ahora se puede recibirla gratis, Vd. no pierde nada. </p>
+            </div>
+            <div class="down-menu">
+              <p class="down-menu-like">Me gusta</p>
+              <p class="down-menu-answer none">Contestar</p>
+              <p class="down-menu-translate none">Traducir</p>
+              <p class="time">hace una hora</p>
+            </div>
           </div>
-          <div>
-            <hr class="hr-line">
-            <img loading="lazy" alt class="rounded-circle float-left img1" src="images/comm/com-9.jpg" style="width: 50px;">
-            <p class="text-left post-meta"
-               style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;padding: 5px;">&nbsp;Elvira Lindo&nbsp;/ Socuéllamos<br></p>
-            <p class="text-left post-meta" style="color: rgb(0,0,0);font-family:  sans-serif;font-size: 16px;">Chicos, muchísimas gracias. Ya tengo esperanza. He pedido Fortuflex, sin falta le escribiré a José sobre los resultados.<br></p>
+          <div class="comment">
+            <img class="avatar" src="images/4-1.jpg">
+            <div class="comm_text">
+              <p class="user_name"> Elena Órtiz </p>
+              <p class="text"> ¿Cómo pedir Fortuflex? </p>
+            </div>
+            <div class="down-menu">
+              <p class="down-menu-like">Me gusta</p>
+              <p class="down-menu-answer none">Contestar</p>
+              <p class="down-menu-translate none">Traducir</p>
+              <p class="time">hace una hora</p>
+            </div>
           </div>
+          <div class="comment">
+            <img class="avatar" src="images/1-4.jpg">
+            <div class="comm_text">
+              <p class="user_name"> José Aretio </p>
+              <p class="text"> Viviana, ecco il link sul
+                Elena, a través del formulario oficial. La crema realmente me ayudó
+              </p>
+            </div>
+            <div class="down-menu">
+              <p class="down-menu-like">Me gusta</p>
+              <p class="down-menu-answer none">Contestar</p>
+              <p class="down-menu-translate none">Traducir</p>
+              <p class="time">hace una hora</p>
+            </div>
+          </div>
+          <div class="comment">
+            <img class="avatar" src="images/4-1.jpg">
+            <div class="comm_text">
+              <p class="user_name">Elena Órtiz </p>
+              <p class="text"> José, sí, gracias, ya lo pedí. Por favor, ¿podría decirme cuánto lleva la entrega? </p>
+            </div>
+            <div class="down-menu">
+              <p class="down-menu-like">Me gusta</p>
+              <p class="down-menu-answer none">Contestar</p>
+              <p class="down-menu-translate none">Traducir</p>
+              <p class="time">hace una hora</p>
+            </div>
+          </div>
+          <div class="comment">
+            <img class="avatar" src="images/1-4.jpg">
+            <div class="comm_text">
+              <p class="user_name"> José Aretio </p>
+              <p class="text"> Elena, la crema se entregará en 2-3 días más o menos) </p>
+            </div>
+            <div class="down-menu">
+              <p class="down-menu-like">Me gusta</p>
+              <p class="down-menu-answer none">Contestar</p>
+              <p class="down-menu-translate none">Traducir</p>
+              <p class="time">hace una hora</p>
+            </div>
+          </div>
+          <div class="comment">
+            <img class="avatar" src="images/5-1.jpg">
+            <div class="comm_text">
+              <p class="user_name">Manuela Gómez </p>
+              <p class="text"> Pedí Fortuflex para mi hermana hace dos meses. Sufría de artritis mucho tiempo. Cómo me agradeció más tarde por arriesgarme y hacer el pedido </p>
+            </div>
+            <div class="down-menu">
+              <p class="down-menu-like">Me gusta</p>
+              <p class="down-menu-answer none">Contestar</p>
+              <p class="down-menu-translate none">Traducir</p>
+              <p class="time">hace una hora</p>
+            </div>
+          </div>
+          <div class="comment">
+            <img class="avatar" src="images/1-5.jpg">
+            <div class="comm_text">
+              <div class="emodji">
+                <img src="./images/like.png" alt="">
+                2
+              </div>
+              <p class="user_name">Juan Millás </p>
+              <p class="text"> Manuela, ¿es tan eficaz?</p>
+            </div>
+            <div class="down-menu">
+              <p class="down-menu-like">Me gusta</p>
+              <p class="down-menu-answer none">Contestar</p>
+              <p class="down-menu-translate none">Traducir</p>
+              <p class="time">hace una hora</p>
+            </div>
+          </div>
+          <div class="comment">
+            <img class="avatar" src="images/1-6.jpg">
+            <div class="comm_text">
+              <p class="user_name"> Pedro Rocasolano </p>
+              <p class="text"> He oído hablar de este producto, Algunos de mis amigos pidieron algo similar. Tengo problemas de pierna después de una lesión, ya llevo más de un año con dolores importantes, los médicos no ayudaron... ahora he leído este artículo y decidí pedir Fortuflex. Voy a hacer un pedido ahora mismo, ya no lo aguanto más. </p>
+            </div>
+            <div class="down-menu">
+              <p class="down-menu-like">Me gusta</p>
+              <p class="down-menu-answer none">Contestar</p>
+              <p class="down-menu-translate none">Traducir</p>
+              <p class="time">hace una hora</p>
+            </div>
+          </div>
+          <div class="comment">
+            <img class="avatar" src="images/1-7.jpg">
+            <div class="comm_text">
+              <p class="user_name"> Marco López</p>
+              <p class="text"> Veo que no solo yo tengo estos problemas, gracias a Dios, hace un mes apliqué Fortuflex, me quitó la osteocondritis tan rápido como ninguno de decenas de remedios para articulaciones. </p>
+            </div>
+            <div class="down-menu">
+              <p class="down-menu-like">Me gusta</p>
+              <p class="down-menu-answer none">Contestar</p>
+              <p class="down-menu-translate none">Traducir</p>
+              <p class="time">hace una hora</p>
+            </div>
+          </div>
+          <div class="comment">
+            <img class="avatar" src="images/1-8.jpg">
+            <div class="comm_text">
+              <p class="user_name">Olga Viedma</p>
+              <p class="text"> ¿Les ayuda realmente, chicos? Los fármacos y los médicos resultaron ser inútiles para mí. </p>
+            </div>
+            <div class="down-menu">
+              <p class="down-menu-like">Me gusta</p>
+              <p class="down-menu-answer none">Contestar</p>
+              <p class="down-menu-translate none">Traducir</p>
+              <p class="time">hace una hora</p>
+            </div>
+          </div>
+          <div class="comment">
+            <img class="avatar" src="images/6-1.jpg">
+            <div class="comm_text">
+              <p class="user_name"> Miranda Flor </p>
+              <p class="text"> Olga, por supuesto. El efecto es muy fuerte, pero lo más importante es que no dañe Su salud. Por lo tanto, apresúrese a hacer un pedido. Fortuflex me ayudó a deshacerse totalmente de problemas de espalda. </p>
+              <img src="images/2-7.jpg" style="max-width: 200px;">
+            </div>
+            <div class="down-menu">
+              <p class="down-menu-like">Me gusta</p>
+              <p class="down-menu-answer none">Contestar</p>
+              <p class="down-menu-translate none">Traducir</p>
+              <p class="time">hace una hora</p>
+            </div>
+          </div>
+          <div class="comment">
+            <img class="avatar" src="images/7-1.jpg">
+            <div class="comm_text">
+              <div class="emodji">
+                <img src="./images/like.png" alt="">
+                4
+              </div>
+              <p class="user_name"> Crisálida Medina </p>
+              <p class="text"> Gracias, Fortuflex me ayudó mucho. Lo pedí en el sitio web oficial directamente. No espere demasiado, es mejor deshacerse del problema ahora mismo que entender más tarde que ya no puede moverse. <br>
+              </p>
+            </div>
+            <div class="down-menu">
+              <p class="down-menu-like">Me gusta</p>
+              <p class="down-menu-answer none">Contestar</p>
+              <p class="down-menu-translate none">Traducir</p>
+              <p class="time">hace una hora</p>
+            </div>
+          </div>
+          <div class="comment">
+            <img class="avatar" src="images/8-1.jpg">
+            <div class="comm_text">
+              <p class="user_name"> Concha Moreno </p>
+              <p class="text">¡Si no fuera por Vd., no me habría creído jamás en la eficacia de este Fortuflex! Mi
+                marido tuvo el mismo problema que Su mujer, más de 5 años. Sufría muchísimo. Y
+                ahora corre como si tuviera 18 años otra vez.
+                El paquete llegó muy rápido.</p>
+            </div>
+            <div class="down-menu">
+              <p class="down-menu-like">Me gusta</p>
+              <p class="down-menu-answer none">Contestar</p>
+              <p class="down-menu-translate none">Traducir</p>
+              <p class="time">hace una hora</p>
+            </div>
+          </div>
+    
+          <div class="comment">
+            <img class="avatar" src="images/8-1.jpg">
+            <div class="comm_text">
+              <p class="user_name"> Concha Moreno </p>
+              <p class="text">Más o menos un mes de aplicación de la crema, ahora el marido se mueve
+                libremente, no se queja del dolor. Estoy muy contenta de su salud.</p>
+            </div>
+            <div class="down-menu">
+              <p class="down-menu-like">Me gusta</p>
+              <p class="down-menu-answer none">Contestar</p>
+              <p class="down-menu-translate none">Traducir</p>
+              <p class="time">hace una hora</p>
+            </div>
+          </div>
+    
+          <div class="comment">
+            <img class="avatar" src="images/9-1.jpg">
+            <div class="comm_text">
+              <p class="user_name"> Pedro Fernández </p>
+              <p class="text"> El resultado superó todas mis expectativas. La radiculitis reapareció para siempre. Pedí la crema para mis amigos, uno tiene dolores de espalda y otro, de codo.  </p>
+            </div>
+            <div class="down-menu">
+              <p class="down-menu-like">Me gusta</p>
+              <p class="down-menu-answer none">Contestar</p>
+              <p class="down-menu-translate none">Traducir</p>
+              <p class="time"> Hace 57 minutos </p>
+            </div>
+          </div>
+          <div class="comment">
+            <img class="avatar" src="images/10-1.jpg">
+            <div class="comm_text">
+              <p class="user_name"> Cristina Padilla </p>
+              <p class="text"> Hoy, hace muy poco, formalicé el pedido..... <br>
+                Dejé mi teléfono en el formulario del pedido, casi enseguida me llamaron para confirmar el pedido. Por fin deseo vivir en paz, disfrutar de paseos etc. </p>
+            </div>
+            <div class="down-menu">
+              <p class="down-menu-like">Me gusta</p>
+              <p class="down-menu-answer none">Contestar</p>
+              <p class="down-menu-translate none">Traducir</p>
+              <p class="time"> Hace 55 minutos </p>
+            </div>
+          </div>
+          <div class="comment">
+            <img class="avatar" src="images/11-1.jpg">
+            <div class="comm_text">
+              <p class="user_name"> María Cánovas </p>
+              <p class="text"> Ya la pedí para mí misma, mi artritis me torturaba muchísimo durante varios años. Cada vez que llovía o cambiaba el tiempo, me sentía casi sin piernas. Fortuflex me ayudó en pocas semanas. Ni siquiera pude creer que fuera posible. </p>
+            </div>
+            <div class="down-menu">
+              <p class="down-menu-like">Me gusta</p>
+              <p class="down-menu-answer none">Contestar</p>
+              <p class="down-menu-translate none">Traducir</p>
+              <p class="time"> Hace 53 minutos </p>
+            </div>
+          </div>
+          <div class="comment">
+            <img class="avatar" src="images/12-1.jpg">
+            <div class="comm_text">
+              <p class="user_name"> Tania Olmo </p>
+              <p class="text"> Una conocida nuestra tiene una farmacia privada donde esta crema vale casi 100 EUR, por lo tanto, no la pude comprar. Y aquí la vi gratis y la pedí enseguida, porque mi pensión es miserable y no echo el dinero por la ventana. Mi rodilla ya no me molesta más, y trabajo en el jardín sin dolores de forma confortable. ¡Gracias! </p>
+            </div>
+            <div class="down-menu">
+              <p class="down-menu-like">Me gusta</p>
+              <p class="down-menu-answer none">Contestar</p>
+              <p class="down-menu-translate none">Traducir</p>
+              <p class="time"> Hace 48 minutos </p>
+            </div>
+          </div>
+    
+          <div class="comment">
+            <img class="avatar" src="images/13-1.jpg">
+            <div class="comm_text">
+              <p class="user_name">Leticia Paz </p>
+              <p class="text"> Fortuflex me ayudó a curar la gota solo en un curso de aplicación, y ahora lo tengo siempre en mi botiquín por si acaso.  </p>
+              <img src="images/2-1.jpg" style="max-width: 200px;">
+            </div>
+            <div class="down-menu">
+              <p class="down-menu-like">Me gusta</p>
+              <p class="down-menu-answer none">Contestar</p>
+              <p class="down-menu-translate none">Traducir</p>
+              <p class="time"> Hace 36 minutos</p>
+            </div>
+          </div>
+          <div class="comment">
+            <img class="avatar" src="images/1-9.jpg">
+            <div class="comm_text">
+              <div class="emodji">
+                <img src="./images/like.png" alt="">
+                <img src="./images/heart.png" alt="">
+              </div>
+              <p class="user_name"> Alejandro Menéndez</p>
+              <p class="text"> La pedí para mí. Funcionó muy bien. Si tiene problemas de articulaciones, lo recomiendo, créame, todo se curará enseguida. La entrega es rápida, solo tres días.</p>
+            </div>
+            <div class="down-menu">
+              <p class="down-menu-like">Me gusta</p>
+              <p class="down-menu-answer none">Contestar</p>
+              <p class="down-menu-translate none">Traducir</p>
+              <p class="time"> Hace 39 minutos </p>
+            </div>
+          </div>
+    
+          <div class="comment">
+            <img class="avatar" src="images/14-1.jpg">
+            <div class="comm_text">
+              <p class="user_name"> Eva García </p>
+              <p class="text">Leí el artículo y decidí pedir la crema enseguida para probarla mientras funciona
+                esta promoción. Lo que pasa es que los fármacos “ordinarios” me ayudaban solo
+                temporalmente, me dijeron que era complicado curar la artritis. Ahora le contaré de mis
+                resultados. Me entregaron Fortuflex muy rápido. Ya durante el primer día me siento un
+                alivio tan grande que debo escribirlo aquí. Muchas gracias, ya puedo vivir la vida
+                completa.</p>
+            </div>
+            <div class="down-menu">
+              <p class="down-menu-like">Me gusta</p>
+              <p class="down-menu-answer none">Contestar</p>
+              <p class="down-menu-translate none">Traducir</p>
+              <p class="time"> Hace 31 minutos </p>
+            </div>
+          </div>
+          <div class="comment">
+            <img class="avatar" src="images/15-1.jpg">
+            <div class="comm_text">
+              <div class="emodji">
+                <img src="./images/like.png" alt="">
+                <img src="./images/heart.png" alt="">
+              </div>
+              <p class="user_name"> Claudia Díaz </p>
+              <p class="text"> Chicos, ¿dónde lo pidieron? En las farmacias no se vende este remedio, y me da miedo comprarlo en Internet. No quiero recibir un producto falsificado que no me aportará nada bueno. </p>
+            </div>
+            <div class="down-menu">
+              <p class="down-menu-like">Me gusta</p>
+              <p class="down-menu-answer none">Contestar</p>
+              <p class="down-menu-translate none">Traducir</p>
+              <p class="time"> Hace 27 minutos </p>
+            </div>
+          </div>
+          <div class="comment aos-init aos-animate" data-aos="zoom-in">
+            <img class="avatar" src="images/comm02.jpg">
+            <div class="comm_text">
+              <p class="user_name">Jesús María Sánchez Martínez</p>
+              <p class="text">¡Dulce Paula! ¡Salud para ti y tus seres queridos! Gracias por hablarnos de Fortuflex. Al
+                fin y al cabo, no todo el mundo está dispuesto a cuidar no sólo de sí mismo, sino
+                también de otras personas. Gracias de nuevo.</p>
+            </div>
+            <div class="down-menu">
+              <p class="down-menu-like">Me gusta</p>
+              <p class="down-menu-answer none">Contestar</p>
+              <p class="down-menu-translate none">Traducir</p>
+              <p class="time"> Hace 15 minutos</p>
+            </div>
+          </div>
+    
+          <div id="commentPushBlock"></div>
+    
+          <form id="commentForm" method="POST" style="display: flex;flex-direction: column;max-width: 300px;margin: 0 auto;">
+            <div style="display: flex; align-items: start; justify-content: center;">
+              <div class="form__ava" style="display: flex; align-items: start; margin-right: 10px;">
+                <img class="img__noname" style="max-width: 80px" src="images/user.png" alt="">
+              </div>
+              <div class="form__fields" style="width: 80%; flex-direction: column; display: flex;">
+                <input type="text" placeholder="Nombre" id="inputCommentName" required="" style="margin-bottom: 10px; height: 30px; border-radius: 1px;  border: 1px solid grey; padding-left: 5px;">
+                <input type="text" placeholder="Añadir comentario" required="" id="inputCommentText" style="margin-bottom: 10px; height: 50px; border-radius:1px; border: 1px solid grey; padding-left: 5px;">
+                <textarea style="display: none;" name="" id="inputCommentText" placeholder="Enviar" cols="20" rows="5"></textarea>
+              </div>
+      
+            </div>
+            <button type="submit" id="commentPush" style="max-width: 130px;
+  border-radius: 1px;
+  border: 1px solid rgb(126, 126, 126);
+    margin: 0 auto;
+    width: 100%;
+    height: 30px;
+    background: rgb(116 144 235);
+    color: #FFFFFF;
+    font-size: 14px;">Enviar</button>
+          </form>
+    
+          <script>
+            const commnetForm = document.querySelector('#commentForm');
+            const inputCommentName = document.querySelector('#inputCommentName');
+            const inputCommentText = document.querySelector('#inputCommentText');
+            const commentPush = document.querySelector('#commentPush');
+            const commentPushBlock = document.querySelector('#commentPushBlock');
+
+            const pushCom = (e) => {
+              const valueName = inputCommentName.value;
+              const valueText = inputCommentText.value;
+              const dateNow = new Date().toLocaleDateString();
+              const comment = `<div class="comment" data-aos="zoom-in">
+                        <img class="avatar" src="images/user.png">
+                        <div class="comm_text">
+                            <p class="user_name">${valueName}</p>
+                            <p class="text">${valueText}</p>
+                        </div>
+                        <div class="down-menu">
+                            <p class="down-menu-like">Me gusta</p>
+                            <p class="down-menu-answer none">Contestar</p>
+                            <p class="down-menu-translate none">Traducir</p>
+                            <p class="time"> Hace 1 minutos</p>
+                        </div>
+                    </div>`;
+
+              localStorage['valName'] = valueName;
+              localStorage['valText'] = valueText;
+              localStorage['timeNow'] =
+                commentPushBlock.innerHTML = comment;
+              inputCommentName.value = '';
+              inputCommentText.value = '';
+            };
+
+            // `<div class="comments__item">
+
+            // <img src="img/noname.png" class="comments__item-avatar" width="50" height="50">
+            //   <div class="comments__item-ind">
+            //     <div class="comments__item-head">
+            //         <span> ${valueName}<br>${valueText} </span>
+            //     </div>
+            //     <div class="comments__item-text">
+            //     </div>
+            //     <div class="component_reposy"><b>
+            //         ${dateNow}
+            //       </b>
+            //         <nav>Kedvelem</nav>
+            //         <nav>Válasz</nav>
+            //         <nav>Még</nav>
+            //       </div>
+
+            //   </div>
+            // </div>`
+
+            commentForm.addEventListener('submit', (e) => {
+              e.preventDefault();
+              pushCom();
+            })
+
+            document.addEventListener("DOMContentLoaded", () => {
+              const name = localStorage['valName'];
+              const text = localStorage['valText'];
+              if (name || text) {
+                inputCommentName.value = name;
+                inputCommentText.value = text;
+                pushCom();
+              }
+            });
+          </script>
+          <a class="le-form-le-button" href="#to_form" onclick="flytoorder();" style="text-transform: uppercase;">RECIBIR FORTUFLEX</a>
         </div>
-        <div style="padding-bottom: 42px;">
-          <hr class="hr-line">
-          <div class="d-xl-flex justify-content-xl-center">
-            <center>
-              <img loading="lazy" alt src="images/info.jpg">
-              <h2>Quedan existencia de  Fortuflex por promoción: <u style="font-size:42px !important;color:red;">4 un.</u></h2>
-              <h3>Se reciben los pedidos de «Fortuflex» por programa beneficiario</h3>
-              <a href="#roulette" class="obutton">Hacer el pedido ahora mismo</a>
-              <small></small>
-            </center>
-          </div>
-        </div>
+        
       </div>
     </div>
     <!--<div class="col" style="margin-top: -30px;text-align: center;">
